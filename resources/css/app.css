@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary{
+    @apply bg-green-400;
+}
+.text-primary{
+    @apply text-green-400;
+}
+
+.text-secon{
+    @apply text-gray-600;
+}
