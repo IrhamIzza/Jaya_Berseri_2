@@ -8,11 +8,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
 
 <body>
+    <header class="bg-gray-300 w-full fixed z-10 md:flex md:flex-row justify-between items-center">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img class="h-14 w-14 rounded-r-lg" src="../assets/img/Logo.png" alt="">
+            </div>
+
+            <!-- Hamburger Button (Muncul di Mobile) -->   
+            <button id="menu-btn"
+                class="mx-4 p-2 w-10 md:hidden group flex flex-col space-y-[6px] justify-items-center ">
+                <div
+                    class="w-full transition-all group-[.active]:rotate-45 group-[.active]:origin-top-left border border-black">
+                </div>
+                <div class="w-full transition-all group-[.active]:scale-0 border border-black"></div>
+                <div
+                    class="w-full transition-all group-[.active]:-rotate-45 group-[.active]:origin-bottom-left border border-black">
+                </div>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mr-[20vh]">
+            <ul id="mobile-menu" class="md:static fixed translate-x-full md:translate-x-0 md:w-full right-0 flex flex-col md:flex-row w-[40vh] h-full gap-8
+            text-center bg-white md:bg-gray-300 md:shadow-none shadow-md duration-400 transition-all z-10 md:items-center py-4">
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">About</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Services</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Sign in</a></li>
+            </ul>
+        </div>
+
+    </header>
+
     {{-- Hero Section --}}
-    <section id='home' class="pt-32">
+    <section id='home' class="pt-[6vh]">
         <div class="flex flex-wrap">
             <div class=" relative border-t-2 border-black py-5 ">
                 <div class="py-5 text-5xl font-bold text-center text-white lg:text-8xl">
@@ -27,7 +62,8 @@
                             serta membantu petani dalam mengatasi kelangkaan pupuk subsidi
                             seiring di kuranginya kuota pupuk bersubsidi dari pemerintah.
                         </p>
-                        <button class="rounded-full shadow-lg overflow-hidden border-[1px] border-white group flex mx-auto">
+                        <button
+                            class="rounded-full shadow-lg overflow-hidden border-[1px] border-white group flex mx-auto">
                             <div class="py-3 px-10 text-white text-sm font-bold group-hover:bg-green-400">Telusuri
                             </div>
                         </button>
@@ -191,6 +227,15 @@
             </div>
         </div>
     </section>
+    {{-- <script>
+        // JavaScript untuk Toggle Menu Mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+    </script> --}}
 
 </body>
 
