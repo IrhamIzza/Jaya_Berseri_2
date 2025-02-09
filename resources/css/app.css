@@ -12,3 +12,7 @@
 .text-secon{
     @apply text-gray-600;
 }
+
+.text-produk-kandungan{
+    @apply hover:scale-125 hover:text-green-600 duration-500;
+}
