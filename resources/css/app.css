@@ -16,3 +16,7 @@
 .text-produk-kandungan{
     @apply hover:scale-125 hover:text-green-600 duration-500;
 }
+
+.icon-list{
+    @apply bg-gradient-to-br from-green-500 to-yellow-300 absolute top-0 left-0 h-[38px] w-[38px] lg:h-10 lg:w-10 rounded-l-xl rounded-tr-2xl font-bold ;
+}

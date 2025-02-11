@@ -45,30 +45,62 @@
 </div>
 
 
-<div class="p-6 bg-gray-300 ">
-    <div class="text-2xl font-bold">MISSION, VISION & VALUES</div>
-    <div class="flex justify-between flex-col">
-        <div class="relative">
-            <div class="bg-red-500 absolute ">1.</div>
-            <div class=" h-full w-full bg-white rounded-md py-2 px-5">
+<div class="p-6 bg-gray-300 lg:px-36">
+    <div class="text-2xl md:text-4xl font-bold text-center">KEUNTUNGAN PUPUK NPK SCUMFOFE</div>
+    <div class="mt-3 flex justify-between flex-col gap-2 ">
+        <div class="relative pt-4 pl-4">
+            <div class="icon-list  ">
+               <span class="text-xl lg:text-2xl bottom-0 right-2 absolute">1</span>
+            </div>
+            <div class=" h-full w-full bg-white rounded-md py-2 px-7 lg:text-xl">
                 Mudah larut sehingga mudah diserap tanah
             </div>
         </div>
-        <div class="">
-            <div>
-                2. Terdapat unsur yang lengkap
+        <div class="relative pt-4 pl-4">
+            <div class="icon-list  ">
+               <span class="text-xl lg:text-2xl  bottom-0 right-2 absolute">2</span>
+            </div>
+            <div class=" h-full w-full bg-white rounded-md py-2 px-7 lg:text-xl">
+                Terdapat unsur yang lengkap
             </div>
         </div>
-        <div class="">
-            <div>
-                3. Dapat memperbaiki sifat fisik juga bioglogis tanah / Tanah menjadi gembur
+        <div class="relative pt-4 pl-4">
+            <div class="icon-list  ">
+               <span class="text-xl lg:text-2xl bottom-0 right-2 absolute">3</span>
+            </div>
+            <div class=" h-full w-full bg-white rounded-md py-2 px-7 lg:text-xl">
+                Dapat memperbaiki sifat fisik juga bioglogis tanah / Tanah menjadi gembur
             </div>
         </div>
-        <div class="">
-            <div>
-                4. Dapat meningkatkan produksi hasil pertanian
+        <div class="relative pt-4 pl-4">
+            <div class="icon-list  ">
+               <span class="text-xl lg:text-2xl bottom-0 right-2 absolute">4</span>
+            </div>
+            <div class=" h-full w-full bg-white rounded-md py-2 px-7 lg:text-xl">
+                Dapat meningkatkan produksi hasil pertanian
             </div>
         </div>
     </div>
+</div>
+
+<div class="p-4 lg:px-40 md:px-10">
+    <div class="text-2xl md:text-4xl font-bold text-center">JENIS JENIS TANAMAN </div>
+    <div class="grid grid-flow-col grid-rows-4 md:grid-rows-3 py-6 lg:text-2xl gap-1 md:items-center ">
+        <div class="relative pr-2 ">1. Tanamanan Pangan <span class="right-[2px] absolute">:</span></div>
+        <div class="relative pr-2 self-start row-span-2 md:row-span-1">2. Tanamanan Palawija <span class="right-[2px] absolute">:</span></div>
+        <div class="relative pr-2 ">3. Tanamanan Perkebunan <span class="right-[2px] absolute">:</span></div>
+        <div class="relative ">Padi, Kedelai, Jagung</div>
+        <div class="relative row-span-2 md:row-span-1"> Semangka, Cabe, Tomat, Melon, Bawang Merah/Putih, Kentang </div>
+        <div class="relative "> Tebu, Kopi, Kelapa Sawit, Kako</div>
+    </div>
+</div>
+<div class="p-4 lg:px-40 md:px-10">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-6">
+        <div><img class="aspect-[3/2] w-full object-cover border-[6px] border-green-500 rounded-md" src="../assets/img/NPK/npk1.jpeg" alt=""></div>
+        <div><img class="aspect-[3/2] w-full object-cover border-[6px] border-green-500 rounded-md" src="../assets/img/NPK/npk2.jpeg" alt=""></div>
+        <div><img class="aspect-[3/2] w-full object-cover border-[6px] border-green-500 rounded-md" src="../assets/img/NPK/npk3.jpeg" alt=""></div>
+        <div><img class="aspect-[3/2] w-full object-cover border-[6px] border-green-500 rounded-md" src="../assets/img/NPK/npk4.jpeg" alt=""></div>
+        <div><img class="aspect-[3/2] w-full object-cover border-[6px] border-green-500 rounded-md" src="../assets/img/NPK/npk5.jpeg" alt=""></div>
+        <div><img class="aspect-[3/2] w-full object-cover border-[6px] border-green-500 rounded-md" src="../assets/img/NPK/npk6.jpeg" alt=""></div>
 </div>
 @endsection

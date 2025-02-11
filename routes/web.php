@@ -9,6 +9,8 @@ Route::get('/', function () {
 Route::get('home', function () {
     return view('home');
 });
-Route::get('/produk', function () {
+Route::get('/pupukNPK', function () {
     return view('produk');
 });
+
+// Route::get('/pupukNPK');
