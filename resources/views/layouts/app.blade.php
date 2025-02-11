@@ -37,7 +37,14 @@
             <ul id="mobile-menu" class="md:static fixed translate-x-full md:translate-x-0 md:w-full right-0 flex flex-col md:flex-row w-[40vh] h-full gap-6
             text-center bg-gray-300 md:shadow-none shadow-md duration-400 transition-all z-10 md:items-center py-2 md:text-xl font-semibold">
                 <li><a href="/home" class="text-gray-700 hover:text-blue-500">Home</a></li>
-                <li><a href="/produk" class="text-gray-700 hover:text-blue-500">Produk</a></li>
+                {{-- <li><a href="/produk" class="text-gray-700 hover:text-blue-500">Produk</a></li> --}}
+                <button id="dropdown-btn" class="text-gray-700 hover:text-blue-500 relative">
+                    Produk ⬇
+                    <div id="dropdown-menu" class="hidden absolute left-1/3 bg-white p-2 rounded-md">
+                        <li><a href="/pupukNPK" class="text-gray-700 hover:text-blue-500">Pupuk NPK</a></li>
+                        <li><a href="/pupukDAP" class="text-gray-700 hover:text-blue-500">Pupuk DAP</a></li>
+                    </div>
+                </button>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">About</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Contact</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Sign in</a></li>
@@ -63,8 +70,8 @@
                 </div>
                 <div class="flex-1">
                     <p class="font-semibold py-2">Products</p>
-                    <a class="block underline" href="">Pupuk DAP</a>
-                    <a class="block underline" href="">Pupuk NPK</a>
+                    <a class="block underline w-fit" href="">Pupuk DAP</a>
+                    <a class="block underline w-fit" href="">Pupuk NPK</a>
                 </div>
                 <div class="flex-1">
                     <p class="font-semibold py-2">Contact</p>

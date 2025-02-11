@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('title','Produk')
 @section('content')
-<div class="bg-gray-300 w-full h-full mt-4 p-6">
+
+<div class="bg-gray-300 w-full h-full mt-4 p-6 lg:px-32">
     <div class="text-4xl md:text-5xl font-bold text-center py-4">PUPUK NPK</div>
     <div class="flex flex-col md:flex-row gap-4 lg:px-10">
         <div class="w-[35vh] max-w-[40vh] md:w-1/5 mx-auto object-cover hover:scale-110 duration-500 animate-all">
