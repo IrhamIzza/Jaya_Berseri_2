@@ -40,9 +40,9 @@
                 {{-- <li><a href="/produk" class="text-gray-700 hover:text-blue-500">Produk</a></li> --}}
                 <button id="dropdown-btn" class="text-gray-700 hover:text-blue-500 relative">
                     Produk ⬇
-                    <div id="dropdown-menu" class="hidden absolute left-1/3 bg-white p-2 rounded-md">
-                        <li><a href="/pupukNPK" class="text-gray-700 hover:text-blue-500">Pupuk NPK</a></li>
-                        <li><a href="/pupukDAP" class="text-gray-700 hover:text-blue-500">Pupuk DAP</a></li>
+                    <div id="dropdown-menu" class="hidden absolute left-1/2 bg-white p-2 rounded-md">
+                        <li><a href="/pupukNPK" class="text-gray-700 hover:text-blue-500 ">NPK</a></li>
+                        <li><a href="/pupukDAP" class="text-gray-700 hover:text-blue-500">DAP</a></li>
                     </div>
                 </button>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">About</a></li>
