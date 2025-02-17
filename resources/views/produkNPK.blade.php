@@ -25,17 +25,17 @@
     <div class="grid grid-flow-col py-6 place-items-center place-content-evenly">
         <div class="grid grid-flow-col gap-5 md:gap-10">
             
-            <div class="md:text-3xl ">
+            <div class="text-sm sm:text-base md:text-3xl ">
                 <div class="text-produk-kandungan">N: 14,46 %</div>
                 <div class="text-produk-kandungan">P: 14,74 %</div>
                 <div class="text-produk-kandungan">S: 3.50 %</div>
             </div>
-            <div  class="md:text-3xl">
+            <div  class="text-sm sm:text-base md:text-3xl">
                 <div class="text-produk-kandungan">Cu: 9,80 PPM</div>
                 <div class="text-produk-kandungan">B: 30,01 PPM</div>
                 <div class="text-produk-kandungan">Mo: 0,15 PPM</div>
             </div>
-            <div  class="md:text-3xl">
+            <div  class="text-sm sm:text-base md:text-3xl">
                 <div class="text-produk-kandungan">K: 17,10 %</div>
             </div>
         </div>
