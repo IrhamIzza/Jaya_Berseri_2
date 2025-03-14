@@ -47,7 +47,7 @@
                 </button>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">About</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-500">Contact</a></li>
-                <li><a href="/login" class="text-gray-700 hover:text-blue-500">Sign in</a></li>
+                <li><a href="/admin" class="text-gray-700 hover:text-blue-500">Sign in</a></li>
             </ul>
         </div>
     </nav>
@@ -77,7 +77,11 @@
                     <p class="font-semibold py-2">Contact</p>
                     <p> Jl. raya bangsal no 107 Mojokerto</p>
                     <p>saifultalun40@gmail.com</p>
-                    <p>081334067463</p>
+                    <a class="underline" href="https://wa.me/+6281334067463">
+                        <p>081334067463</p>
+                    </a>
+                    
+                    
                 </div>
             </div>
         </div>
