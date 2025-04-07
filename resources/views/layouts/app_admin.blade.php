@@ -15,7 +15,7 @@
             <nav>
                 <ul>
                     <li class="mb-2">
-                        <a href="#" class="block py-2 px-3 rounded hover:bg-gray-700">Dashboard</a>
+                        <a href="/admin" class="block py-2 px-3 rounded hover:bg-gray-700">Dashboard</a>
                     </li>
                     <li class="mb-2">
                         <a href="#" class="block py-2 px-3 rounded hover:bg-gray-700">Users</a>

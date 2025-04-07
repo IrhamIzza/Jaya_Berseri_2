@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="bg-cover h-full w-full absolute top-0 -z-10 blur-[3px] brightness-[0.3]"
-                style="background-image: url(../assets/img/bg7.jpg)">
+                style="background-image: url(../assets/img/bg7.jpg)"
             </div>
         </div>
     </div>
@@ -116,42 +116,46 @@
         </div>
     </div>
     {{-- Produk --}}
-    <div class="w-full h-full max-h-[400px] gap-4 py-10 px-4 flex md:px-16 md:gap:10">
-        <div class="w-2/3 md:w-9/12 lg:w-3/4">
-            <p class="font-bold text-5xl sm:text-center lg:mt-4">PUPUK DAP</p>
-            <p class="pb-6 mt-5 items-center md:text-base lg:text-lg ">
-                Pupuk DAP (Diammonium Phosphate) adalah pupuk anorganik yang mengandung dua unsur hara utama,
-                Mengandung 18% Nitrogen (N) untuk pertumbuhan daun & batang
-                <span class="hidden md:inline">, serta 46% Fosfor (P) untuk
-                    mempercepat perkembangan akar, bunga, dan buah. Pupuk DAP juga gampang larut dalam air
-                    memberikan hasil yang lebih cepat. </span>
-            </p>
-            <button class="flex mx-auto rounded-full shadow-lg overflow-hidden border-[1px] border-black group">
-                <div class="py-3 px-10 text-black text-sm font-bold group-hover:bg-green-400">Telusuri
-                </div>
-            </button>
-        </div>
-        <div class="mt-8 w-1/3 md:w-3/12 lg:w-1/4 hover:scale-110 animate-all duration-500 ">
-            <img class="w-full h-full" src="../assets/img/icon1.png" alt="Pupuk DAP">
+    <div class="w-full h-full py-10 ">
+        <p class="font-bold text-4xl md:text-5xl text-center lg:mt-4">PUPUK DAP</p>
+        <div class="flex gap-4 px-4 md:px-16 md:gap:10 py-3">
+            <div class="w-2/3 md:w-9/12 lg:w-3/4">
+                <p class="pb-6 mt-5 items-center md:text-base lg:text-xl ">
+                    Pupuk DAP (Diammonium Phosphate) adalah pupuk anorganik yang mengandung dua unsur hara utama,
+                    Mengandung 18% Nitrogen (N) untuk pertumbuhan daun & batang
+                    <span class="hidden md:inline">, serta 46% Fosfor (P) untuk
+                        mempercepat perkembangan akar, bunga, dan buah. Pupuk DAP juga gampang larut dalam air
+                        memberikan hasil yang lebih cepat. </span>
+                </p>
+                <button class="flex mx-auto rounded-full shadow-lg overflow-hidden border-[1px] border-black group">
+                    <div class="md:pt-4 py-3 px-10 text-black text-sm font-bold group-hover:bg-green-400">Telusuri
+                    </div>
+                </button>
+            </div>
+            <div class="max-h-[240px] mt-8 w-1/3 md:w-3/12 lg:w-1/4 hover:scale-110 animate-all duration-500 ">
+                <img class="w-full h-full" src="../assets/img/icon1.png" alt="Pupuk DAP">
+            </div>
         </div>
     </div>
 
-    <div class="w-full h-full max-h-[400px] bg-gray-300 gap-4 py-10 px-4 flex md:px-16 md:gap:10">
-        <div class="mt-8 w-1/3 md:w-3/12 lg:w-1/4 hover:scale-110 animate-all duration-500 ">
-            <img class="w-full h-full" src="../assets/img/icon2.png" alt="Pupuk NPK">
-        </div>
-        <div class="w-2/3 md:w-9/12 lg:w-3/4">
-            <p class="font-bold text-5xl sm:text-center lg:mt-4">PUPUK NAP</p>
-            <p class="pb-6 mt-5 items-center md:text-base lg:text-lg ">
-                Pupuk NAP (Nitrogen Ammonium Phosphate) adalah jenis pupuk majemuk yang mengandung dua unsur hara
-                utama, yaitu Nitrogen (N) dan Fosfor (P). Pupuk ini digunakan untuk meningkatkan pertumbuhan tanaman
-                <span class="hidden md:inline">dengan memberikan nutrisi esensial yang dibutuhkan selama masa
-                    pertumbuhan. Dengan pupuk NAP, hasil panen lebih berkualitas dan melimpah.</span>
-            </p>
-            <button class="flex mx-auto rounded-full shadow-lg overflow-hidden border-[1px] border-black group">
-                <div class="py-3 px-10 text-black text-sm font-bold group-hover:bg-green-400">Telusuri
-                </div>
-            </button>
+    <div class="w-full h-full  bg-gray-300 py-10 ">
+        <p class="font-bold text-3xl md:text-5xl text-center lg:mt-4">PUPUK NAP</p>
+        <div class="gap-4 px-4 flex md:px-16 md:gap:10 py-3">
+            <div class="max-h-[240px] mt-8 w-1/3 md:w-3/12 lg:w-1/4 hover:scale-110 animate-all duration-500 ">
+                <img class="w-full h-full" src="../assets/img/icon2.png" alt="Pupuk NPK">
+            </div>
+            <div class="w-2/3 md:w-9/12 lg:w-3/4">
+                <p class="pb-6 mt-5 items-center md:text-base lg:text-xl ">
+                    Pupuk NAP (Nitrogen Ammonium Phosphate) adalah jenis pupuk majemuk yang mengandung dua unsur hara
+                    utama, yaitu Nitrogen (N) dan Fosfor (P). Pupuk ini digunakan untuk meningkatkan pertumbuhan tanaman
+                    <span class="hidden md:inline">dengan memberikan nutrisi esensial yang dibutuhkan selama masa
+                        pertumbuhan. Dengan pupuk NAP, hasil panen lebih berkualitas dan melimpah.</span>
+                </p>
+                <button class="flex mx-auto rounded-full shadow-lg overflow-hidden border-[1px] border-black group">
+                    <div class="py-3 px-10 text-black text-sm font-bold group-hover:bg-green-400">Telusuri
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
 </section>

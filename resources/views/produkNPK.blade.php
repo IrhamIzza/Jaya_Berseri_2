@@ -9,13 +9,7 @@
             <img src="../assets/img/Pupuk_NPK_Produk.jpeg" class="rounded-md" alt="">
         </div>
         <p class="md:w-4/5 lg:text-xl">
-            Pupuk NPK adalah adalah pupuk majemuk yang mengandung tiga unsur sekaligus. Unsur ini merupakan gabungan
-            dari pupuk tunggal, yaitu N (Nitrogen), P (Phospat), dan, K (Kalium). Gabungan dari ketiga unsur inilah yang
-            membuat pupuk ini disebut NPK.
-            Selain ketiga unsur hara makro, pupuk NPK juga mengandung 2 unsur hara mikro.
-            Unsur-unsur yang terdapat dalam pupuk NPK dapat membantu pertumbuhan vegetatif, pertumbuhan akar, dan
-            pembungaan. Pupuk NPK menjadi pupuk favorit dari para petani. Pupuk NPK yang ada di pasaran, sudah dibuat
-            sesuai dengan kadar dan kombinasi yang beraneka ragam.
+            {{$article->konten}}
         </p>
     </div>
 </div>

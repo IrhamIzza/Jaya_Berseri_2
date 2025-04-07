@@ -8,11 +8,7 @@
             <img src="../assets/img/Pupuk_DAP - Copy.jpeg" class="rounded-md" alt="">
         </div>
         <p class="md:w-4/5 lg:text-xl">
-            Pupuk DAP adalah pupuk yang mengandung unsur lengkap baik mikro maupun non mikro yang dibutuhkan setiap tanaman. DAP
-            tergolong mudah larus sehingga cepat diserap tanaman
-            Salah satu jenis pupuk yang umum digunakan adalah diamonium fosfat atau pupuk DAP. Pupuk DAP adalah pupuk
-            majemuk buatan dengan mengandung dua unsur hara Nitrogen (N) dan Fosfor (P2O5) dengan rumus kimia
-            (NH4)2HPO4.
+            {{$article->konten}}
         </p>
     </div>
 </div>
