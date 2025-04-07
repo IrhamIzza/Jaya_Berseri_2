@@ -77,7 +77,7 @@
                     <p class="font-semibold py-2">Contact</p>
                     <p> Jl. raya bangsal no 107 Mojokerto</p>
                     <p>saifultalun40@gmail.com</p>
-                    <a class="underline" href="https://wa.me/+6281334067463">
+                    <a class="underline" target="_blank" href="https://wa.me/+6281334067463">
                         <p>081334067463</p>
                     </a>
                     
