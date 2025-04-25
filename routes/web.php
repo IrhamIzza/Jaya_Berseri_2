@@ -26,8 +26,11 @@ Route::get('/pupukDAP', [ArticleController::class, 'pupukDAP']);
 Route::get('article/edit/{id}', [ArticleController::class, 'edit'])->middleware('auth')->name('article.edit');
 Route::put('article/{id}', [ArticleController::class, 'update'])->middleware('auth')->name('article.update');
 
-
-
+// Route::middleware(['auth', 'api'])
+//     ->prefix('api')
+//     ->group(function () {
+//         Route::get('admin', [AdminController::class, 'index'])->name('admin');
+//     });
 
 Route::post('/logout', [AuthController::class, 'Logout'])->name('logout');
 

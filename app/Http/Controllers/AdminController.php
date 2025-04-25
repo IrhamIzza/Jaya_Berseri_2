@@ -18,10 +18,9 @@ class AdminController extends Controller
         foreach ($articles as $article) {
             $article->konten = Str::words($article->konten, 50, '...');
         }
-        return view("admin",compact("user","articles"));
+        // return view("admin",compact("user","articles"));
+        return $articles;
     }
-
-
     /**
      * Show the form for creating a new resource.
      */
