@@ -12,4 +12,8 @@ Route::get('/user', function (Request $request) {
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
+Route::get('/admin', function (){
+    // return 'dd';
+})->middleware(['admin','auth:sanctum']);
+
 // Route::get('/coba', [AdminController::class, 'index']);
