@@ -8,7 +8,6 @@ use function Laravel\Prompts\error;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-use Illuminate\Auth\Events\Validated;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
