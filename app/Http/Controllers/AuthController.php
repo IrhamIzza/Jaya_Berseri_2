@@ -50,52 +50,40 @@ class AuthController extends Controller
     public function Login(Request $Request)
     {
         #validasi atau menampung
-        $validasi = Validator::make($Request->all(),[
-            'name' => 'required',
-            'email' => 'required|email',
-            'password' => 'required',   
-        ]);
-
         // $validasi = $Request->validate([
         //     'email' => 'required|email',
         //     'password' => 'required'
         // ]);
-
+        $validasi = Validator::make($Request->all(),[
+            'email' => 'required|email',
+            'password' => 'required',   
+        ]);
+        
         $user = User::where('email', $Request->email)->first();
         if ($validasi->fails()) {
             return response()->json($validasi->errors(), 422);
         }
 
         if (!$user || !Hash::check($Request->password, $user->password)) {
-            return response()->json(['messages' => 'email atau password salah']);
+            return response()->json(['messages' => 'email atau password salah'],422);
         }else{
             $user->tokens()->delete();
             $token = $user->createToken('auth_token')->plainTextToken;
             return response()->json([
                 'message' => 'Login berhasil!',
+                'data' => $user,
                 'access_token' => $token,
                 'token_type' => 'Bearer',
             ],200);
         }
-
-        #Mengecek apakah sudah benar atau belum
-        // if (Auth::attempt($validasi)) {
-        //     $token = $user->createToken('auth_token')->plainTextToken;
-        //     return response()->json([
-        //         'message' => 'Login berhasil!',
-        //         'access_token' => $token,
-        //         'token_type' => 'Bearer',
-        //     ],200);
-        // } else {      
-        //     return response()->json([
-        //         'error' => 'Username atau Password salah'
-        //     ]);
-        // }
-
     }
-    public function Logout()
+    public function Logout(Request $request)
     {
-        Auth::logout();
-        return redirect('/login');
+        // $user = $request;
+        $request->user()->currentAccessToken()->delete();
+        return response()->json([
+            'messages' => 'anda berhasil loguot',
+            // 'data' => $user
+        ]);
     }
 }

@@ -18,6 +18,6 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/admin', function (){ 
     })->middleware('admin');
     Route::post('/product-create', [ProductController::class, 'store']);
-    
+    Route::post('/logout', [AuthController::class, 'logout']);
 });
 // Route::get('/coba', [AdminController::class, 'index']);
