@@ -9,7 +9,7 @@ class Article extends Model
     protected $table = "article";
 
     protected $fillable = [
-        'judul', 'konten'
+        'judul', 'konten','image'
     ];
 
 }

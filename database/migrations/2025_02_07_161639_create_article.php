@@ -15,6 +15,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('judul');
             $table->longText('konten');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
