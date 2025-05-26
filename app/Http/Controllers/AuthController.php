@@ -18,11 +18,12 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
-    public function Register(Request $Request) {
-        $validasi = Validator::make($Request->all(),[
+    public function Register(Request $Request)
+    {
+        $validasi = Validator::make($Request->all(), [
             'name' => 'required',
             'email' => 'required|email|unique:users,email,',
-            'password' => 'required',    
+            'password' => 'required',
         ]);
         $data = $validasi->validate();
         if ($validasi->fails()) {
@@ -32,10 +33,10 @@ class AuthController extends Controller
         }
 
         $user = User::create([
-            'name'=> $data['name'],
-            'email'=> $data['email'],
-            'password'=> bcrypt($data['password'])  ,
-            'role'=> 2,
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password']),
+            'role' => 2,
         ]);
 
         return response()->json(['message' => 'Berhasil!', 'data' => $user], 201);
@@ -54,27 +55,33 @@ class AuthController extends Controller
         //     'email' => 'required|email',
         //     'password' => 'required'
         // ]);
-        $validasi = Validator::make($Request->all(),[
+        $validasi = Validator::make($Request->all(), [
             'email' => 'required|email',
-            'password' => 'required',   
+            'password' => 'required',
         ]);
-        
+
         $user = User::where('email', $Request->email)->first();
         if ($validasi->fails()) {
             return response()->json($validasi->errors(), 422);
         }
 
         if (!$user || !Hash::check($Request->password, $user->password)) {
-            return response()->json(['messages' => 'email atau password salah'],422);
-        }else{
+            return response()->json(['messages' => 'email atau password salah'], 422);
+        } else {
             $user->tokens()->delete();
-            $token = $user->createToken('auth_token')->plainTextToken;
+            // Buat token dan simpan expires_at
+            $tokenResult = $user->createToken('auth_token');
+            // Set expired 1 jam dari sekarang
+            $tokenResult->accessToken->expires_at = now()->addHour();
+            $tokenResult->accessToken->save();
+            // Ambil token stringnya
+            $token = $tokenResult->plainTextToken;
             return response()->json([
                 'message' => 'Login berhasil!',
                 'data' => $user,
                 'access_token' => $token,
                 'token_type' => 'Bearer',
-            ],200);
+            ], 200);
         }
     }
     public function Logout(Request $request)
