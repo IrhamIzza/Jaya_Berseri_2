@@ -58,6 +58,7 @@ class AuthController extends Controller
         $validasi = Validator::make($Request->all(), [
             'email' => 'required|email',
             'password' => 'required',
+            'remember_me' => 'nullable|boolean',
         ]);
 
         $user = User::where('email', $Request->email)->first();
@@ -71,8 +72,12 @@ class AuthController extends Controller
             $user->tokens()->delete();
             // Buat token dan simpan expires_at
             $tokenResult = $user->createToken('auth_token');
-            // Set expired 1 jam dari sekarang
-            $tokenResult->accessToken->expires_at = now()->addHour();
+            if ($Request->remember_me) {
+                $expiresAt = now()->addDays(7); 
+            }else {
+                $expiresAt = now()->addHour(); 
+            }
+            $tokenResult->accessToken->expires_at = $expiresAt;
             $tokenResult->accessToken->save();
             // Ambil token stringnya
             $token = $tokenResult->plainTextToken;
@@ -81,6 +86,7 @@ class AuthController extends Controller
                 'data' => $user,
                 'access_token' => $token,
                 'token_type' => 'Bearer',
+                'expires_at' => $expiresAt->toDateTimeString(),
             ], 200);
         }
     }
